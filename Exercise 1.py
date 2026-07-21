@@ -4,6 +4,7 @@ def main():
     #ask for user input 
     name = input("What is your name: ")
 
+    #print user name
     print(f"Hello, {name}")
     return 0
 
