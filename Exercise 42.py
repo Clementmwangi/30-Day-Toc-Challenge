@@ -22,14 +22,13 @@ def main():
     #ask for user input
     user_choice = input("Enter a grade letter(A, B, C, D): ").upper()
 
-    if user_choice == "A":
-        print(grades.get("A"))
-    elif user_choice == "B":
-        print(grades.get("B"))
-    elif user_choice == "C":
-        print(grades.get("C"))
+    # use .get() so as to get None if user enters invalid choice
+    choice = grades.get(user_choice)
+
+    if choice is not None:
+        print(f"For the grade {user_choice} the minimum score is {choice}")
     else:
-        print(grades.get("D"))
+        print("You have put an invalid choice")
 
     return 0
 
