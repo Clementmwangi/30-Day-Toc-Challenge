@@ -1,10 +1,19 @@
 """
-Ask for a word. Print whether the word starts with "a" or "A" using a boolean expression.
+Given:
+
+numbers = [10, 20, 30, 40]
+
+Use a for loop to print each number on a new line.
 """
 
 import sys
 
 def main():
+
+    numbers = [10, 20, 30, 40]
+
+    for number in numbers:
+        print(number)
 
     return 0
 
