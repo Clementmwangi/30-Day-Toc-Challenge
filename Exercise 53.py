@@ -19,6 +19,7 @@ def main():
 
     access_level = 1
 
+    #didn't use bool as it would still be true as long as the string isn't empty.
     if is_admin:
         access_level += 4
         print(f"{user_name} your access_level has been increased to {access_level } ")
